@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<h2>Create Art</h2>
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon id="Spiral" points="0,0 90,0 90,10 10,10 10,90 0,90" stroke="blue" stroke-width="3" fill="lime" />
+
+</svg>
+<input type="button" value="Start Art Creation" onclick="AddPoints()" />
+<svg height="150" width="400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="30%">
+            <stop offset="0%" stop-color="yellow" />
+            <stop offset="90%" stop-color="red" />
+        </radialGradient>
+    </defs>
+    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+
+    <text x="50" y="80" font-size="30" font-family="Arial" font-weight="bold" fill="black">:)</text>
+</svg>
+
+
+
+</body>
+</html>
